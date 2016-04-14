@@ -16,6 +16,7 @@
 		font-size: 100%;
 		font: inherit;
 		vertical-align: baseline;
+		text-align: center;
 	}
 
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
@@ -133,7 +134,7 @@
 		@media screen and (max-width: 736px) {
 
 			body {
-				padding: 5em 2em 2em 2em;
+				padding: 0 2em 2em 2em;
 			}
 
 		}
@@ -141,7 +142,7 @@
 		@media screen and (max-width: 360px) {
 
 			body {
-				padding: 5em 1.25em 1.25em 1.25em;
+				padding: 0 1.25em 1.25em 1.25em;
 			}
 
 		}
@@ -291,7 +292,7 @@
 /* Type */
 
 	body, input, select, textarea {
-		color: rgba(255, 255, 255, 0.75);
+		color: rgba(255, 255, 255, 1);
 		font-family: "Roboto", sans-serif;
 		font-size: 16pt;
 		font-weight: 400;
@@ -345,7 +346,7 @@
 		-ms-transition: border-bottom-color 0.2s ease, color 0.2s ease;
 		transition: border-bottom-color 0.2s ease, color 0.2s ease;
 		border-bottom: dotted 1px rgba(255, 255, 255, 0.25);
-		color: rgba(255, 255, 255, 0.35);
+		color: rgba(255, 255, 255, 1);
 		text-decoration: none;
 	}
 
@@ -372,7 +373,7 @@
 		color: rgba(255, 255, 255, 0.35);
 		font-weight: 700;
 		line-height: 1em;
-		margin: 0 0 1em 0;
+		margin: 0 0 .15em 0;
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -382,7 +383,7 @@
 
 	h1 {
 		font-size: 2.5em;
-		line-height: 1.25em;
+		line-height: 1em;
 	}
 
 	h2 {
@@ -470,9 +471,13 @@
 	}
 
 	header p {
-		color: rgba(255, 255, 255, 0.5);
+		color: rgba(255, 255, 255, 1);
 		position: relative;
 		margin: 0 0 1.5em 0;
+	}
+
+	header p.sub-title{
+		color: rgb(231, 129, 0);
 	}
 
 	header h2 + p {
@@ -554,12 +559,9 @@
 
 	ul {
 		list-style: disc;
-		margin: 0 0 2em 0;
-		padding-left: 1em;
 	}
 
 		ul li {
-			padding-left: 0.5em;
 		}
 
 		ul.icons {
@@ -570,7 +572,7 @@
 
 			ul.icons li {
 				display: inline-block;
-				padding: 0 1.5em 0 0;
+				padding: 1em 1.5em 0 0;
 			}
 
 				ul.icons li:last-child {
@@ -578,11 +580,11 @@
 				}
 
 				ul.icons li .icon:before {
-					font-size: 300%;
+					font-size: 2em;
 				}
 
 				ul.icons li a {
-					color: rgb(255, 255, 255, 0.5);
+					color: rgb(255, 255, 255, 1);
 				}
 
 /* Form */
@@ -1011,14 +1013,30 @@
 
 	#header h1 {
 		font-family: "Graduate";
-		font-size: 7em;
+		font-size: 8em;
 		color: rgb(231, 129, 0);
-		margin: 0;
+		margin-top: -4%;
+	}
+
+	#header img{
+		width: 650px;
+		margin-bottom: 3em;
 	}
 
 	#header p {
-		font-size: 1.35em;
-		line-height: 1.65em;
+		font-size: 1.25em;
+		line-height: .75em;
+		font-weight: bolder;
+	}
+
+	#header ul {
+		padding-bottom: .5em;
+	}
+
+	#header ul li{
+		list-style-type: none;
+		font-size: 1.25em;
+		padding-bottom: .5em;
 	}
 
 	#header a {
@@ -1029,13 +1047,28 @@
 
 		#header h1 {
 			font-family: "Graduate";
-			font-size: 3.5em;
-			padding-bottom: .5em;
+			font-size: 4.5em;
+			margin-top: 1em;
+		}
+
+		#header img{
+		width: 330px;
+		margin-bottom: 1.5em;
 		}
 
 		#header p {
-			font-size: 1em;
+			display: none;
 		}
+		#header ul li{
+		list-style-type: none;
+		font-size: .75em;
+		padding-bottom: .25em;
+		}
+
+		#header ul.icon li {
+		font-style: 2em;
+	}
+
 
 	}
 
