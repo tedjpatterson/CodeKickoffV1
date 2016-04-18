@@ -1,4 +1,4 @@
 # Code Kickoff Homepage (V1)
 This is the first version of the Code Kickoff community meetup site.
 
-Feel free to look at what's up by heading to [Github hosted repo page](https://www.tedjpatterson.github.com/CodeKickoffV1) or by heading on over to [the official homepage](https://www.codekickoff.com)
+Feel free to look at what's up by heading to [Github hosted repo page](https://tedjpatterson.github.io/CodeKickoffV1/) or by heading on over to [the official homepage](https://codekickoff.com)
